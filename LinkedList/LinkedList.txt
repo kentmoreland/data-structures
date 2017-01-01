@@ -1,0 +1,17 @@
+LinkedList:
+
+Two Classes:
+  > Node:
+    > properties:
+      > value
+      > next
+
+  > LinkedList:
+    > properties:
+      > length | How many elements in the list
+
+    > methods:
+      > push   | Accepts a value and adds to the end of the list
+      > pop    | Removes the last value in the list and returns it
+      > get    | Accepts an index and returns the value at that position
+      > delete | Accepts an index, removes value from the list, collapsees, and returns removed value
