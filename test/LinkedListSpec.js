@@ -5,9 +5,9 @@ describe('LinkedList', function () {
   Node = require('../LinkedList/linkedList.js').Node;
 
   describe('LinkedList', function(){
-    let list = new LinkedList;
+    let list = new LinkedList();
 
-    it('should contain a linkedList constructor', () => {
+    it('should contain a linkedList class', () => {
       expect(list).to.exist;
     });
 
@@ -36,10 +36,10 @@ describe('LinkedList', function () {
   });
 
   describe ('Node', () => {
-    let n = new Node;
+    let n = new Node(5);
 
     it('should contain a node class', () => {
-      expect(Node).to.exist;
+      expect(n).to.exist;
     });
 
     it('should contain a value property', () => {
@@ -47,9 +47,36 @@ describe('LinkedList', function () {
     });
 
     it('should contain a next property', () => {
-      expect(n.next).to.exist;
+      expect(n.next).to.equal(undefined);
+    });
+  });
+
+  describe('push', () => {
+    let list = new LinkedList();
+    list.push(3);
+    list.push(4);
+
+    it('should add to the length of the list', () => {
+      expect(list.length).to.equal(2)
+    });
+
+    it('should add the value to the end of the list', () => {
+      expect(list.head.next.value).to.equal(4);
     });
 
   });
+
+  describe('pop', () => {
+
+  });
+
+  describe('get', () => {
+
+  });
+
+  describe('delete', () => {
+
+  });
+
 
 });
