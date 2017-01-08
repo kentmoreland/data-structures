@@ -30,9 +30,9 @@ class ArrayList {
   unshift(value){
     let next;
     for(let i = 0; i <= this.length; i++){
-       next = this.data[i]; // 5
-       this.data[i] = value; // 4
-       value = next; // 5
+       next = this.data[i];
+       this.data[i] = value;
+       value = next;
     }
     this.length++;
   }
@@ -51,9 +51,9 @@ class ArrayList {
     delete this.data[this.length - 1];
     this.length--;
     return result;
-  };
+  }
 
-};
+}
 
 
 module.exports.ArrayList = ArrayList;

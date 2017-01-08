@@ -68,7 +68,7 @@ describe('ArrayList', function(){
 
     after(() => {
       list.length++;
-    })
+    });
 
     it('should remove the last value of the list and return it', () => {
       expect(seven).to.equal(7);
@@ -136,7 +136,7 @@ describe('ArrayList', function(){
 
     it('should collapse the list after deletions', () => {
        expect(list.data[1]).to.equal(7);
-    })
+    });
 
   });
 
